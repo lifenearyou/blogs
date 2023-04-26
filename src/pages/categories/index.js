@@ -39,7 +39,7 @@ const Categories = ({ categories, error }) => {
 
       <main>
         <SearchPage activeTab={2} categories={categories} error={error} />
-        <Newsletter />
+        {/* <Newsletter /> */}
       </main>
 
       <Footer />

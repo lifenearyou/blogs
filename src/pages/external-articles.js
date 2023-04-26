@@ -43,7 +43,7 @@ const ExternalArticles = ({ articles }) => {
 
       <main>
         <ExternalArticlesPage articles={articles} />
-        <Newsletter />
+        {/* <Newsletter /> */}
       </main>
       <Footer />
     </>
@@ -70,7 +70,7 @@ export async function getStaticProps() {
 
   return {
     props: {
-      articles: data.externalArticles
+      articles: data.externalArticles || null
     },
     revalidate: 300
   };

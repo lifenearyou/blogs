@@ -57,7 +57,7 @@ const SnippetHome = ({ snippet, snippets, error }) => {
 
       <main>
         <SnippetPage snippet={snippet} snippets={snippets} error={error} />
-        <Newsletter />
+        {/* <Newsletter /> */}
       </main>
 
       <Footer />
@@ -102,8 +102,8 @@ export async function getStaticProps({ params }) {
 
   return {
     props: {
-      snippet: data?.snippet,
-      snippets: data?.snippets,
+      snippet: data?.snippet || null,
+      snippets: data?.snippets || null,
       error: error ? error.message : null
     },
     revalidate: 300

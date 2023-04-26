@@ -39,7 +39,7 @@ const Articles = ({ posts, error }) => {
 
       <main>
         <SearchPage activeTab={0} posts={posts} error={error} />
-        <Newsletter />
+        {/* <Newsletter /> */}
       </main>
 
       <Footer />

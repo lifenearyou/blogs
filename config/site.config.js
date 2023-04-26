@@ -47,22 +47,28 @@ const siteConfig = {
       },
       privacy: {
         title: 'Privacy Policy | LifeNearyou',
-        description: 'This page contains itsrakesh - blog privacy policies.',
+        description: 'This page contains LifeNearyou privacy policies.',
         image:
           'https://res.cloudinary.com/dxvtbzyay/image/upload/v1682422389/LifeNearYou-logos_transparent_ksjxew.png'
       },
       cookie: {
         title: 'Cookie Policy | LifeNearyou',
-        description: 'This page contains itsrakesh - blog cookie policies.',
+        description: 'This page contains LifeNearyou cookie policies.',
         image:
           'https://res.cloudinary.com/dxvtbzyay/image/upload/v1682422389/LifeNearYou-logos_transparent_ksjxew.png'
       },
       terms: {
         title: 'Terms & Conditions | LifeNearyou',
-        description: 'This page contains itsrakesh - blog terms & conditions.',
+        description: 'This page contains LifeNearyou terms & conditions.',
         image:
           'https://res.cloudinary.com/dxvtbzyay/image/upload/v1682422389/LifeNearYou-logos_transparent_ksjxew.png4'
       },
+      externalArticles: {
+        title: 'External Articles | LifeNearyou',
+        description: 'Read articles written by LifeNearyou on other sites.',
+        image:
+          'https://res.cloudinary.com/dxvtbzyay/image/upload/v1682422389/LifeNearYou-logos_transparent_ksjxew.png4'
+      }
     }
   },
   branding: {
@@ -90,7 +96,7 @@ const siteConfig = {
       twitter: 'https://twitter.com/lifenearyou_',
       instagram: 'https://www.instagram.com/lifenearyou',
       youtube: 'https://www.youtube.com/@lifenearyou',
-      showwcase: 'https://www.showwcase.com/itsrakesh'
+      showwcase: 'https://www.lifenearyou.com'
     },
     about: 'https://www.lifenearyou.com/about',
     status: 'https://www.lifenearyou.com',

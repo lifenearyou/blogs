@@ -39,7 +39,7 @@ const Snippets = ({ snippets, error }) => {
 
       <main>
         <SearchPage activeTab={1} snippets={snippets} error={error} />
-        <Newsletter />
+        {/* <Newsletter /> */}
       </main>
 
       <Footer />
@@ -62,7 +62,7 @@ export async function getStaticProps() {
 
   return {
     props: {
-      snippets: data?.snippets,
+      snippets: data?.snippets || null,
       error: error ? error.message : null
     },
     revalidate: 300

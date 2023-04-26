@@ -39,7 +39,7 @@ const Tags = ({ tags, loading, error }) => {
 
       <main>
         <SearchPage activeTab={3} tags={tags} loading={loading} error={error} />
-        <Newsletter />
+        {/* <Newsletter /> */}
       </main>
 
       <Footer />
