@@ -1,21 +1,18 @@
 <div id="top"></div>
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/1c639728-6ada-4eaa-beb6-4bdcb492baa1/deploy-status)](https://app.netlify.com/sites/blog-itsrakesh/deploys)
-
 <br />
 <div align="center">
 
-  <h3 align="center">itsrakesh - blog</h3>
+  <h3 align="center">LifeNearYou - blog</h3>
 
   <p align="center">
-    Browse programming tutorials and articles written by Rakesh Potnuru.
+    Browse blogs by LifeNearYou
     <br />
     <br />
-    <a href="https://blog.itsrakesh.co">View Example</a>
     ·
-    <a href="https://github.com/RakeshPotnuru/Blog/issues">Report Bug</a>
+    <a href="https://github.com/lifenearyou/Blog/issues">Report Bug</a>
     ·
-    <a href="https://github.com/RakeshPotnuru/Blog/issues">Request Feature</a>
+    <a href="https://github.com/lifenearyou/Blog/issues">Request Feature</a>
   </p>
 </div>
 
@@ -45,8 +42,6 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-
-[![itsrakesh blog][product-screenshot]](https://blog.itsrakesh.co)
 
 Follow [this](https://blog.itsrakesh.co/how-to-set-up-your-own-personal-blog-step-by-step-guide) guide to set up your own instance of this blog.
 
@@ -166,19 +161,6 @@ Don't forget to give the project a star! Thanks again!
 ## License
 
 Distributed under the MIT License. See `LICENSE.txt` for more information.
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
-<!-- CONTACT -->
-## Contact
-
-Twitter - [@rakesh_at_tweet](https://twitter.com/rakesh_at_tweet)
-
-Project Link: [https://github.com/RakeshPotnuru/Blog](https://github.com/RakeshPotnuru/Blog)
-
-Status - [status.itsrakesh.co](https://status.itsrakesh.co)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
