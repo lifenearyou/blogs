@@ -31,8 +31,8 @@ const SupportMe = () => {
           },
           {
             position: 2,
-            name: 'Support Me',
-            item: `${process.env.NEXT_PUBLIC_SITE_URL}/support-me`
+            name: 'Support Us',
+            item: `${process.env.NEXT_PUBLIC_SITE_URL}/support-us`
           }
         ]}
       />
@@ -42,7 +42,7 @@ const SupportMe = () => {
 
       <main>
         <SupportMePage />
-        <Newsletter />
+        {/* <Newsletter /> */}
       </main>
 
       <Footer />

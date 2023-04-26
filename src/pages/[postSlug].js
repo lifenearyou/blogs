@@ -21,7 +21,7 @@ const PostHome = ({ post, posts, error }) => {
           post.canonicalUrl ||
           `${process.env.NEXT_PUBLIC_SITE_URL}/${post.slug}`
         }
-        image={post.featuredImage.url}
+        image={post?.featuredImage?.url}
         altText={post.title}
         ogType={'article'}
       />
@@ -39,8 +39,8 @@ const PostHome = ({ post, posts, error }) => {
           },
           {
             position: 3,
-            name: post.category.name,
-            item: `${process.env.NEXT_PUBLIC_SITE_URL}/articles?c=${post.category.slug}`
+            name: post?.category?.name,
+            item: `${process.env.NEXT_PUBLIC_SITE_URL}/articles?c=${post?.category?.slug}`
           },
           {
             position: 4,
@@ -52,7 +52,7 @@ const PostHome = ({ post, posts, error }) => {
       <ArticleSchemaMarkup
         url={`${process.env.NEXT_PUBLIC_SITE_URL}/${post.slug}`}
         title={post.title}
-        image={post.featuredImage.url}
+        image={post?.featuredImage?.url}
         publishedAt={
           post.customPublicationDate
             ? post.customPublicationDate
@@ -68,7 +68,7 @@ const PostHome = ({ post, posts, error }) => {
 
       <main>
         <PostPage post={post} posts={posts} error={error} />
-        <Newsletter />
+        {/* <Newsletter /> */}
       </main>
 
       <Footer />

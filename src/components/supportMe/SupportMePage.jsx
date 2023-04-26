@@ -12,7 +12,7 @@ import {
   Text,
   useColorModeValue
 } from '@chakra-ui/react';
-import { FaTwitter } from 'react-icons/fa';
+import { FaInstagram, FaYoutube } from 'react-icons/fa';
 import { CheckCircleIcon } from '@chakra-ui/icons';
 
 import { KofiWidget } from './components';
@@ -24,29 +24,41 @@ const SupportMePage = () => {
   return (
     <>
       <Box m={{ base: '5% 10%', '2xl': '5% 15%' }}>
-        <Heading textAlign={'center'}>SUPPORT ME 💖</Heading>
+        <Heading textAlign={'center'}>SUPPORT US 💖</Heading>
         <Text textAlign={'center'} my={4}>
           Content creation is hard without your support.
         </Text>
         <Box my={8}>
           <SimpleGrid my={8} columns={{ base: 1, md: 3 }}>
             <Box>
-              <Heading size={'md'}>Follow me on Twitter</Heading>
+              <Heading size={'md'}>Follow us on Youtube and Instagram</Heading>
               <Text my={4}>
-                Help me reach more audience. I also share my thoughts, resources
+                Help us reach more audience. I also share our thoughts, resources
                 and more useful stuff.
               </Text>
             </Box>
             <Spacer />
             <Center bg={bgColor} p={12} my={2} rounded={'md'}>
-              <Link href={siteConfig.urls.socials.twitter} isExternal>
+              <Link href={siteConfig.urls.socials.youtube} isExternal>
                 <Button
-                  leftIcon={<FaTwitter />}
+                  leftIcon={<FaYoutube />}
+                  bg={'red'}
+                  color={'white'}
+                  shadow={'md'}
+                  _hover={{ bg: 'black', opacity: 0.8 }}
+                  _active={{ bg: 'black', opacity: 0.8 }}
+                >
+                  Follow
+                </Button>
+              </Link>
+              <Link href={siteConfig.urls.socials.instagram} isExternal marginLeft={'5'}>
+                <Button
+                  leftIcon={<FaInstagram />}
                   bg={'twitter'}
                   color={'white'}
                   shadow={'md'}
-                  _hover={{ bg: 'twitter', opacity: 0.8 }}
-                  _active={{ bg: 'twitter', opacity: 0.8 }}
+                  _hover={{ bg: 'black', opacity: 0.8 }}
+                  _active={{ bg: 'black', opacity: 0.8 }}
                 >
                   Follow
                 </Button>
@@ -63,7 +75,7 @@ const SupportMePage = () => {
             <Box>
               <Heading size={'md'}>Donate</Heading>
               <Text my={4}>
-                Your donations keep this blog running and motivate me to create
+                Your donations keep this blog running and motivate us to create
                 more content.
               </Text>
               <List my={4}>
@@ -73,7 +85,7 @@ const SupportMePage = () => {
                 </ListItem>
               </List>
               <Text as={'i'} fontSize={'sm'}>
-                If you don&apos;t want to use this widget, you can donate via my{' '}
+                If you don&apos;t want to use this widget, you can donate via our{' '}
                 <Link href={siteConfig.urls.kofi} color={'brand.50'} isExternal>
                   ko-fi page
                 </Link>

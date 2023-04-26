@@ -98,8 +98,8 @@ const Post = ({ post }) => {
             <BreadcrumbLink href={'/'}>Home</BreadcrumbLink>
           </BreadcrumbItem>
           <BreadcrumbItem>
-            <BreadcrumbLink href={`/articles?c=${post.category.slug}`}>
-              {post.category.name}
+            <BreadcrumbLink href={`/articles?c=${post?.category?.slug}`}>
+              {post?.category?.name}
             </BreadcrumbLink>
           </BreadcrumbItem>
           <BreadcrumbItem />
@@ -131,29 +131,29 @@ const Post = ({ post }) => {
             </HStack>
 
             {/* Featured image */}
-            <Image
-              src={buildImage(post.featuredImage.public_id)
+            {post?.featuredImage?.public_id && <Image
+              src={buildImage(post?.featuredImage?.public_id)
                 .resize(Resize.scale().width(1600).height(840))
                 .toURL()}
               alt={post.title}
               htmlWidth={'100%'}
               htmlHeight={'auto'}
-            />
+            />}
 
             <HStack alignSelf={'flex-start'} py={5} spacing={4}>
               {/* Author image */}
               <Avatar
-                name={post.author.name}
-                src={buildImage(post.author.photo.public_id).toURL()}
+                name={post?.author?.name}
+                src={buildImage(post?.author?.photo?.public_id).toURL()}
               />
               <VStack spacing={0}>
                 {/* Author name */}
                 <HStack>
-                  <Box color={'brand.50'}>{post.author.name}</Box>
+                  <Box color={'brand.50'}>{post?.author?.name}</Box>
                   <Badge colorScheme={'green'} w={'max-content'}>
                     Author
                   </Badge>
-                  {post.sponsored && (
+                  {post?.sponsored && (
                     <Badge colorScheme={'purple'}>sponsored</Badge>
                   )}
                 </HStack>
@@ -161,9 +161,9 @@ const Post = ({ post }) => {
                 {/* Published date */}
                 <Box alignSelf={'flex-start'} fontSize={'small'}>
                   <Moment format="MMM DD, YYYY">
-                    {post.customPublicationDate
-                      ? post.customPublicationDate
-                      : post.publishedAt}
+                    {post?.customPublicationDate
+                      ? post?.customPublicationDate
+                      : post?.publishedAt}
                   </Moment>
                 </Box>
               </VStack>
@@ -266,7 +266,7 @@ const Post = ({ post }) => {
             }}
             style={{width: "100dvw"}}
           >
-            <MarkdownRenderer content={post.content} />
+            <MarkdownRenderer content={post?.content} />
           </Box>
           <Divider py={5} />
         </VStack>

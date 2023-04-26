@@ -19,12 +19,13 @@ import { CategoryCard } from '@/UIElements/index.js';
 import { buildImage } from '@/utils/index.js';
 
 const Hero = ({ featuredPost, categories }) => {
+
   return (
     <Box m={{ base: '5%', md: '5% 10%', '2xl': '5% 15%' }}>
       <Flex flexDirection={{ base: 'column', md: 'row' }}>
         <VStack w={{ base: '100%', md: '60%' }}>
           {/* Featured Post cover image */}
-          <NextLink href={`/${featuredPost.slug}`} passHref>
+          {featuredPost?.featuredImage && <NextLink href={`/${featuredPost?.slug}`} passHref>
             <Link tabIndex={-1}>
               <Image
                 src={buildImage(featuredPost.featuredImage.public_id)
@@ -36,7 +37,7 @@ const Hero = ({ featuredPost, categories }) => {
                 tabIndex={0}
               />
             </Link>
-          </NextLink>
+          </NextLink>}
 
           <Box
             p={1}
@@ -53,7 +54,7 @@ const Hero = ({ featuredPost, categories }) => {
           </Box>
 
           {/* Featured Post title */}
-          <NextLink href={`/${featuredPost.slug}`} passHref>
+          <NextLink href={`/${featuredPost?.slug}`} passHref>
             <Link tabIndex={-1}>
               <Heading
                 size={'lg'}
@@ -61,7 +62,7 @@ const Hero = ({ featuredPost, categories }) => {
                 alignSelf={'self-start'}
                 _hover={{ color: 'brand.50' }}
               >
-                {featuredPost.title}
+                {featuredPost?.title}
               </Heading>
             </Link>
           </NextLink>

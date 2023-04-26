@@ -22,7 +22,7 @@ const Home = ({ featuredPost, posts, snippets, categories, error }) => {
           categories={categories}
           error={error}
         />
-        <Newsletter />
+        {/* <Newsletter /> */}
       </main>
       <Footer />
     </>
@@ -75,7 +75,7 @@ export async function getStaticProps() {
       posts: data?.posts,
       snippets: data?.snippets,
       categories: data?.categories,
-      featuredPost: featuredPost?.data?.posts[0],
+      featuredPost: featuredPost?.data?.posts[0] || null,
       error: error ? error.message : null
     },
     revalidate: 300

@@ -31,7 +31,7 @@ const ArticleCard = ({ post }) => {
     <VStack my={10} p={4} borderRadius={'xl'} shadow={shadow} h={'max-content'}>
       {/* Cover image */}
       <NextLink href={`/${post.slug}`} passHref>
-        <Link tabIndex={-1}>
+        {post?.featuredImage && <Link tabIndex={-1}>
           <Image
             src={buildImage(post.featuredImage.public_id)
               .resize(Resize.scale().width(1600).height(840))
@@ -42,7 +42,7 @@ const ArticleCard = ({ post }) => {
             rounded={'lg'}
             tabIndex={0}
           />
-        </Link>
+        </Link>}
       </NextLink>
 
       <Wrap
