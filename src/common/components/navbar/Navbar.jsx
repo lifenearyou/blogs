@@ -84,8 +84,8 @@ const Navbar = () => {
               <Image
                 src={siteConfig.branding.logo}
                 alt={'LifeNearYou logo'}
-                htmlWidth={100}
-                htmlHeight={100}
+                htmlWidth={60}
+                htmlHeight={60}
                 tabIndex={0}
               />
             </Link>
