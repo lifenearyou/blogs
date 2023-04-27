@@ -2,7 +2,7 @@ import { Center } from '@chakra-ui/react';
 
 import { ErrorBox } from '@/UIElements/index.js';
 import { Post, MoreArticles } from './components';
-import { Comment } from '@/components/misc';
+// import { Comment } from '@/components/misc';
 
 const PostPage = ({ post, posts, error }) => {
   return (
@@ -14,7 +14,7 @@ const PostPage = ({ post, posts, error }) => {
       ) : (
         <>
           <Post post={post} error={error} />
-          <Comment />
+          {/* <Comment /> */}
           <MoreArticles posts={posts} />
         </>
       )}

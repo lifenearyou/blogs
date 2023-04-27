@@ -2,7 +2,7 @@ import { Center } from '@chakra-ui/react';
 
 import { ErrorBox } from '@/UIElements/index.js';
 import { Snippet, MoreSnippets } from './components';
-import { Comment } from '@/components/misc';
+// import { Comment } from '@/components/misc';
 
 const SnippetPage = ({ snippet, snippets, error }) => {
   return (
@@ -14,7 +14,7 @@ const SnippetPage = ({ snippet, snippets, error }) => {
       ) : (
         <>
           <Snippet snippet={snippet} />
-          <Comment />
+          {/* <Comment /> */}
           <MoreSnippets snippets={snippets} />
         </>
       )}

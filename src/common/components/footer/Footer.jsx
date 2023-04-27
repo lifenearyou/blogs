@@ -100,11 +100,11 @@ const Footer = () => {
                   <Link href={'/external-articles'}>External Articles</Link>
                 </ListItem> */}
 
-                <ListItem>
+                {/* <ListItem>
                   <Link href={siteConfig.urls.newsletter} isExternal>
                     Newsletter
                   </Link>
-                </ListItem>
+                </ListItem> */}
                 <ListItem>
                   <Link href={'/support-us'}>Support Us </Link>❤️
                 </ListItem>
