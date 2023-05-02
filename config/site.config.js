@@ -104,7 +104,7 @@ const siteConfig = {
     kofi: 'https://ko-fi.com/lifenearyou'
   },
   adsense: {
-    publisherId: 'pub-5607528168839545',
+    publisherId: 'pub-1642567097359739',
     slots: {
       pageTop: '6183806725',
       inFeed: '3408517885'

@@ -13,12 +13,14 @@ export default function Document() {
           dangerouslySetInnerHTML={{
             __html: `
             (adsbygoogle = window.adsbygoogle || []).push({
-              google_ad_client: "ca-pub-5607528168839545",
+              google_ad_client: "ca-pub-1642567097359739",
               enable_page_level_ads: true
             });
             `
           }}
         />
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1642567097359739"
+           crossorigin="anonymous"></script>
         <link
           href={
             'https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap'
