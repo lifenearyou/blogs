@@ -20,7 +20,7 @@ export default function Document() {
           }}
         />
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1642567097359739"
-           crossorigin="anonymous"></script>
+           crossOrigin="anonymous"></script>
         <link
           href={
             'https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap'
