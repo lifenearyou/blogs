@@ -14,7 +14,7 @@ const HomePage = ({ featuredPost, posts, snippets, categories, error }) => {
         <>
           <Hero featuredPost={featuredPost} categories={categories} />
           <LatestArticles posts={posts} />
-          <LatestSnippets snippets={snippets} />
+          {/* <LatestSnippets snippets={snippets} /> */}
         </>
       )}
     </>

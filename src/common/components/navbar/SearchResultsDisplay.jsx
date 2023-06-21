@@ -82,7 +82,7 @@ const SearchResultsDisplay = ({
                       )}
                     </PopoverBody>
                   </VStack>
-                  <VStack>
+                  {/* <VStack>
                     <PopoverHeader>Snippets</PopoverHeader>
                     <PopoverBody w={'17rem'} h={'100vh'}>
                       {error && <ErrorBox error={error.message} />}
@@ -120,7 +120,7 @@ const SearchResultsDisplay = ({
                         </Center>
                       )}
                     </PopoverBody>
-                  </VStack>
+                  </VStack> */}
                   <VStack>
                     <PopoverHeader>Categories</PopoverHeader>
                     <PopoverBody w={'17rem'} h={'100vh'}>
